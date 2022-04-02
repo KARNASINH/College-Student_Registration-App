@@ -26,7 +26,7 @@ namespace COMP2084_Assignment_02.Controllers
         }
 
         // GET: Students/Details/5
-        public async Task<IActionResult> Details(float? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
@@ -66,7 +66,7 @@ namespace COMP2084_Assignment_02.Controllers
         }
 
         // GET: Students/Edit/5
-        public async Task<IActionResult> Edit(float? id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
@@ -86,7 +86,7 @@ namespace COMP2084_Assignment_02.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(float id, [Bind("STUDENT_ID,FIRST_NAME,LAST_NAME,PHONE_NUMBER,DOB,GENDER,ENROLLMENT_YEAR,ADDRESS")] Student student)
+        public async Task<IActionResult> Edit(int id, [Bind("STUDENT_ID,FIRST_NAME,LAST_NAME,PHONE_NUMBER,DOB,GENDER,ENROLLMENT_YEAR,ADDRESS")] Student student)
         {
             if (id != student.STUDENT_ID)
             {
@@ -117,7 +117,7 @@ namespace COMP2084_Assignment_02.Controllers
         }
 
         // GET: Students/Delete/5
-        public async Task<IActionResult> Delete(float? id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
             {
@@ -137,7 +137,7 @@ namespace COMP2084_Assignment_02.Controllers
         // POST: Students/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(float id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var student = await _context.Student.FindAsync(id);
             _context.Student.Remove(student);
@@ -145,7 +145,7 @@ namespace COMP2084_Assignment_02.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool StudentExists(float id)
+        private bool StudentExists(int id)
         {
             return _context.Student.Any(e => e.STUDENT_ID == id);
         }

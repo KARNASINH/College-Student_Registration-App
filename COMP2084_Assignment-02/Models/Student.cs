@@ -11,10 +11,9 @@ namespace COMP2084_Assignment_02.Models
     public class Student
     {
         [Required(ErrorMessage = "Student ID is required")]
-        [Range(10000000, 99999999)]
-        [Column(Order = 0, TypeName = "float")]
+        [Column(Order = 0, TypeName = "int")]
         [Key]
-        public float STUDENT_ID { get; set; }
+        public int STUDENT_ID { get; set; }
 
         [Required]
         [Column(TypeName = "nvarchar(255)", Order = 1)]
