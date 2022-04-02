@@ -25,8 +25,8 @@ namespace COMP2084_Assignment_02.Models
         public string LAST_NAME { get; set; }
 
         [Required]
-        [Column(Order = 3, TypeName = "float")]
-        public float PHONE_NUMBER { get; set; }
+        [Column(Order = 3, TypeName = "nvarchar(12)")]
+        public string PHONE_NUMBER { get; set; }
 
         [Required]
         [Column(Order = 4, TypeName = "nvarchar(255)")]
