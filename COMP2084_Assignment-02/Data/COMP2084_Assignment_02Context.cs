@@ -19,5 +19,7 @@ namespace COMP2084_Assignment_02.Data
         public DbSet<COMP2084_Assignment_02.Models.Result> Result { get; set; }
 
         public DbSet<COMP2084_Assignment_02.Models.Professor> Professor { get; set; }
+
+        public DbSet<COMP2084_Assignment_02.Models.Courses> Courses { get; set; }
     }
 }

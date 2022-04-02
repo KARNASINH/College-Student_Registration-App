@@ -1,0 +1,53 @@
+﻿@model IEnumerable<COMP2084_Assignment_02.Models.Courses>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.COURSE_REF_NO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.COURSE_NAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.COURSE_CREDITS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PROFESSOR_ID)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.COURSE_REF_NO)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COURSE_NAME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.COURSE_CREDITS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PROFESSOR_ID)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.COURSE_ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.COURSE_ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.COURSE_ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
