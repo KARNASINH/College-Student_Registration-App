@@ -1,0 +1,73 @@
+﻿@model COMP2084_Assignment_02.Models.Result
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Result</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="STUDENT_ID" class="control-label"></label>
+                <input asp-for="STUDENT_ID" class="form-control" />
+                <span asp-validation-for="STUDENT_ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JAVA" class="control-label"></label>
+                <input asp-for="JAVA" class="form-control" />
+                <span asp-validation-for="JAVA" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DATABASE" class="control-label"></label>
+                <input asp-for="DATABASE" class="form-control" />
+                <span asp-validation-for="DATABASE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GENDERSTUDIES" class="control-label"></label>
+                <input asp-for="GENDERSTUDIES" class="form-control" />
+                <span asp-validation-for="GENDERSTUDIES" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ASP_NET" class="control-label"></label>
+                <input asp-for="ASP_NET" class="form-control" />
+                <span asp-validation-for="ASP_NET" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JAVA_SCRIPT" class="control-label"></label>
+                <input asp-for="JAVA_SCRIPT" class="form-control" />
+                <span asp-validation-for="JAVA_SCRIPT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MAINFRAME" class="control-label"></label>
+                <input asp-for="MAINFRAME" class="form-control" />
+                <span asp-validation-for="MAINFRAME" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PERCENTAGE" class="control-label"></label>
+                <input asp-for="PERCENTAGE" class="form-control" />
+                <span asp-validation-for="PERCENTAGE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GRADE" class="control-label"></label>
+                <input asp-for="GRADE" class="form-control" />
+                <span asp-validation-for="GRADE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

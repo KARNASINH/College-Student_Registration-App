@@ -1,0 +1,72 @@
+﻿@model COMP2084_Assignment_02.Models.Result
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Result</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.STUDENT_ID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.STUDENT_ID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JAVA)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JAVA)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DATABASE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DATABASE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GENDERSTUDIES)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GENDERSTUDIES)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ASP_NET)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ASP_NET)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JAVA_SCRIPT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JAVA_SCRIPT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MAINFRAME)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MAINFRAME)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PERCENTAGE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PERCENTAGE)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GRADE)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GRADE)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.RESULT_ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

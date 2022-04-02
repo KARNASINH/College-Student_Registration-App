@@ -1,0 +1,83 @@
+﻿@model IEnumerable<COMP2084_Assignment_02.Models.Result>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.STUDENT_ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JAVA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DATABASE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GENDERSTUDIES)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ASP_NET)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JAVA_SCRIPT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MAINFRAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PERCENTAGE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GRADE)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.STUDENT_ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JAVA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DATABASE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GENDERSTUDIES)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ASP_NET)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JAVA_SCRIPT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MAINFRAME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PERCENTAGE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GRADE)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.RESULT_ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.RESULT_ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.RESULT_ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
