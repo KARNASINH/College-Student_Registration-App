@@ -21,5 +21,7 @@ namespace COMP2084_Assignment_02.Data
         public DbSet<COMP2084_Assignment_02.Models.Professor> Professor { get; set; }
 
         public DbSet<COMP2084_Assignment_02.Models.Courses> Courses { get; set; }
+
+        public DbSet<COMP2084_Assignment_02.Models.CourseEnrollment> CourseEnrollment { get; set; }
     }
 }
