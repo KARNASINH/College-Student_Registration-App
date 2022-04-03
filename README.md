@@ -7,7 +7,10 @@
  3. Karnasinh Gohil (200478377)
  
  ## Introduction
- - This Assignment about....
+ - In this Assignment we have created 5 Tables in SQL databse and all are interconnected. We do CRUD operations using ASP.net Core Web App.
+ - This application also has Models, Views and Controllers for Students, Professors, Results, Courses and CourseEnrollment.
+ - We have used Azure Cloud technology for SQL databse and hosting the website.
+ - Live project can be found at https://comp2084assignment-02.azurewebsites.net/
 
 ## SQL Database Screenshots
 
