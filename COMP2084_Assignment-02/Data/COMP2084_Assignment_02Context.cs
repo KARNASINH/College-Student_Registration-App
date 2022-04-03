@@ -14,6 +14,7 @@ namespace COMP2084_Assignment_02.Data
         {
         }
 
+        /* Added DBcontext data to thie method */
         public DbSet<COMP2084_Assignment_02.Models.Student> Student { get; set; }
 
         public DbSet<COMP2084_Assignment_02.Models.Result> Result { get; set; }
