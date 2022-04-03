@@ -71,11 +71,6 @@ Course Enrollment by Student
 ![14_CourseEnrollment](https://user-images.githubusercontent.com/75551627/161449007-14098c62-947b-49b4-aabb-9da5b2060e39.JPG)
 
 
-## Git Hub Commits
-
-![15_Git hub Commits](https://user-images.githubusercontent.com/75551627/161449101-9ce0960e-7c43-427a-874c-807232fb3513.JPG)
-
-
 
 
 
