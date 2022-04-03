@@ -10,6 +10,7 @@ namespace COMP2084_Assignment_02.Models
     [Table("STUDENT")]
     public class Student
     {
+        /* Applied Attributes */
         [Required(ErrorMessage = "Student ID is required")]
         [Column(Order = 0, TypeName = "int")]
         [Key]
