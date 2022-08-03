@@ -14,6 +14,9 @@
 ## Programming Language and Technologies used
  
  - [x] C#
+ - [x] Javascript
+ - [x] HTML
+ - [x] CSS
  - [x] Asp.net Framework
  - [x] SQL Server (for the Database)
  - [x] Azure SQL
