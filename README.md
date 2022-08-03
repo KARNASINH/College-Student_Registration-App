@@ -1,17 +1,16 @@
-# COMP2084 Assignment-02 (Group of 3)
-
-## Group Members
-
- 1. Priyansh Thakar (200472583)
- 2. Tania Goyal (200472784)
- 3. Karnasinh Gohil (200478377)
+# College Student Details App
  
  ## Introduction
  - In this Assignment we have created 5 Tables in SQL databse and all are interconnected. We do CRUD operations using ASP.net Core Web App.
  - This application also has Models, Views and Controllers for Students, Professors, Results, Courses and CourseEnrollment.
  - We have used Azure Cloud technology for SQL databse and hosting the website.
  - Live project can be found at https://comp2084assignment-02.azurewebsites.net/
-
+ 
+ 
+ ## Project features
+ 1. On this App you can perform CRUD operation for the different details such as Student, Course, Professor, Exam Result and Course enrollment.
+ 
+ 
 ## SQL Database Screenshots
 
 SQL (SSMS) Database Tables and Column Datatype
