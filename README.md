@@ -16,7 +16,8 @@
  - [x] C#
  - [x] Asp.net Framework
  - [x] SQL Server (for the Database)
- - [x] Cloud to host the website
+ - [x] Azure SQL
+ - [x] Cloud to host the website 
  - [x] Visual Studio
  
 ## SQL Database Screenshots
