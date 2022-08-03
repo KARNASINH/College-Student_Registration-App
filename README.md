@@ -1,4 +1,4 @@
-# College System App
+# College Student Registration App
  
  ## Introduction
  - In this Assignment we have created 5 Tables in SQL databse and all are interconnected. We do CRUD operations using ASP.net Core Web App.
