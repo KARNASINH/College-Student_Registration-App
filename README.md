@@ -10,6 +10,14 @@
  ## Project features
  1. On this App you can perform CRUD operation for the different details such as Student, Course, Professor, Exam Result and Course enrollment.
  
+  
+## Programming Language and Technologies used
+ 
+ - [x] C#
+ - [x] Asp.net Framework
+ - [x] SQL Server (for the Database)
+ - [x] Cloud to host the website
+ - [x] Visual Studio
  
 ## SQL Database Screenshots
 
