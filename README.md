@@ -1,14 +1,14 @@
 # College Student Registration App
  
  ## Introduction
- - In this Assignment we have created 5 Tables in SQL databse and all are interconnected. We do CRUD operations using ASP.net Core Web App.
+ - In this Assignment, we have created 5 Tables in the SQL database and all are interconnected. We do CRUD operations using ASP.net Core Web App.
  - This application also has Models, Views and Controllers for Students, Professors, Results, Courses and CourseEnrollment.
- - We have used Azure Cloud technology for SQL databse and hosting the website.
- - Live project can be found at https://comp2084assignment-02.azurewebsites.net/ (Currently not working)
+ - We have used Azure Cloud technology for SQL database and hosting the website.
+ - The live project can be found at https://comp2084assignment-02.azurewebsites.net/ (Currently not working)
  
  
  ## Project features
- 1. On this App you can perform CRUD operation for the different details such as Student, Course, Professor, Exam Result and Course enrollment.
+ 1. On this App, you can perform CRUD operations for different details such as Student, Course, Professor, Exam Result and Course enrollment.
  
   
 ## Programming Language and Technologies used
